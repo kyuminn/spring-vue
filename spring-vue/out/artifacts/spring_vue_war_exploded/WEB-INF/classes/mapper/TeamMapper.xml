@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.TeamMapper">
+    <select id="getAll" resultType="TeamDto">     <!-- resultType 본인 환경에 맞게 수정 필요 -->
+        select * from team order by id
+    </select>
+
+    <select id="findByDate" parameterType="TeamDto" resultType="TeamDto">
+        select * from team where estbdate <![CDATA[<]]> #{estbdate} order by id
+    </select>
+</mapper> 
