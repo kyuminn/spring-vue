@@ -107,7 +107,7 @@ export default {
   name: 'HelloWorld',
   data () { //data will be exposed on 'this' in script methods
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: '',
       count : 0
     }
   },

@@ -35,8 +35,7 @@ public class MemberController {
         List<MemberDto> ls = memberMapper.postList(memberDto);
         return ls;
     }
-    
-    // pathvariable 실패함ㅋㅋ
+
 //    @GetMapping( "/member/{email:.+}") // . 뒷부분 인식해야함
 //    public List<MemberDto> findByEmail(@PathVariable String email){
 //        log.info("email:{}", email);
